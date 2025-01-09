@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendzz</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000, #333);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #bf0000;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .card, .ddos-card {
+            background-color: #333;
+            border: 2px solid #bf0000;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateX(-100%);
+            animation: slideIn 1s forwards; /* Animasi slide-in */
+        }
+        .card:hover, .ddos-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        .card-header, .ddos-card .card-header {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .price {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .features {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #bf0000;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #ff0000;
+        }
+        .admin-contact {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .admin-contact a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .credits {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        .random-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+        
+        /* Popup Notifikasi */
+        .popup-notification {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #444;
+            color: #fff;
+            padding: 15px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 5px;
+            z-index: 9999;
+            opacity: 1;
+            animation: slideDown 3s ease-out forwards, fadeOut 1s 4s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                top: -100px;
+            }
+            to {
+                top: 0;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Popup Notifikasi -->
+    <div class="popup-notification">
+        Hai kak Selamat Datang di Toko Rendzz Menu kami masih sedikit. Terimakasih... Ayo belanja sekarang!
+    </div>
+
+    <div class="admin-contact">
+        <a href="https://t.me/Rendzz777">Hubungi kami</a>
+    </div>
+    <div class="container">
+        <div class="header">Rendzz</div>
+
+        <!-- Reseller Panel -->
+        <div class="card">
+            <div class="card-header">Reseller Panel</div>
+            <div class="price">Rp 2.000,-</div>
+            <div class="features">
+                Bebas Create<br>
+                Bebas Jual<br>
+                Bebas Pakai
+            </div>
+            <a href="https://t.me/Rendzz777" class="button">Pesan Sekarang</a>
+        </div>
+
+        <!-- Panel 1GB -->
+        <div class="card">
+            <div class="card-header">Panel 1GB</div>
+            <div class="price">Rp 1.000,-</div>
+            <div class="features">
+                Anti Delay!<br>
+                Anti Hackback!
+            </div>
+            <a href="https://t.me/Rendzz777" class="button">Pesan Sekarang</a>
+        </div>
+
+        <!-- Panel 10GB -->
+        <div class="card">
+            <div class="card-header">Panel 10GB</div>
+            <div class="price">Rp 10.000,-</div>
+            <div class="features">
+                Anti Delay!<br>
+                Anti Hackback!
+            </div>
+            <a href="https://t.me/Rendzz777" class="button">Pesan Sekarang</a>
+        </div>
+
+        <!-- Murid DDoS -->
+        <div class="ddos-card">
+            <div class="card-header">Murid DDoS</div>
+            <div class="price">Rp 10.000,-</div>
+            <div class="features">
+                Show Attack Website<br>
+                DDoS Your Website School<br>
+                Run:<br>
+                VPS<br>
+                Termux<br>
+                Pterodactyl (panel)
+            </div>
+            <a href="https://t.me/Rendzz777" class="button">Pesan Sekarang</a>
+        </div>
+
+        <!-- Random Text -->
+        <div class="random-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel risus elit.
+        </div>
+
+        <!-- Credits -->
+        <div class="credits">
+            © 2025 by RNMD. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
